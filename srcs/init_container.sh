@@ -21,6 +21,8 @@ tar -zxvf latest-ja.tar.gz
 rm latest-ja.tar.gz
 mkdir /var/www/html/wordpress
 cp -r wordpress/* /var/www/html/wordpress/
+rm -rf /var/www/html/wordpress/wp-config-sample.php
+mv /tmp/wp-config.php /var/www/html/wordpress/
 
 #phpmyadmin
 wget https://files.phpmyadmin.net/phpMyAdmin/4.9.7/phpMyAdmin-4.9.7-all-languages.tar.gz
